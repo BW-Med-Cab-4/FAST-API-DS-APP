@@ -11,7 +11,7 @@ router = APIRouter()
 strains = pd.read_csv('data/strains.csv')
 list_of_strains = strains.name
 
-predictor = joblib.load('app/api/model.joblib')
+predictor = joblib.load('app/api/gs_2.joblib')
 print('pickled model loaded')
 
 class Strain(BaseModel):
