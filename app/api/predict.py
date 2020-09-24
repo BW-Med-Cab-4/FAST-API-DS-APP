@@ -8,7 +8,7 @@ example = 'I have a severe pain in the back'
 log = logging.getLogger(__name__)
 router = APIRouter()
 
-strains = pd.read_csv('data/strains.csv')
+strains = pd.read_csv('data/final_strains.csv')
 list_of_strains = strains.name
 
 predictor = joblib.load('app/api/gs_2.joblib')
